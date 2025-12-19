@@ -3,6 +3,11 @@ import os
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+from dotenv import load_dotenv
+
+# 1. 加载 .env 文件中的变量到系统环境变量中
+load_dotenv()
+
 # 1. 获取当前脚本所在的绝对路径 (相当于 Node.js 的 __dirname)
 current_dir = os.path.dirname(os.path.abspath(__file__))
 

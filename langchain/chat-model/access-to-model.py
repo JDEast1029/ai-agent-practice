@@ -1,5 +1,9 @@
 import os
 from langchain.chat_models import init_chat_model
+from dotenv import load_dotenv
+
+# 1. 加载 .env 文件中的变量到系统环境变量中
+load_dotenv()
 
 model = init_chat_model(
   model="Qwen/Qwen3-8B", # 模型名称
